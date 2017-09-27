@@ -32,7 +32,7 @@ class AnimatedSwitch extends React.Component {
   };
 
   state = {
-    key: this.props.location.key,
+    key: '' + this.props.location.key,
     match: getMatchedRoute(this.props.children, this.props.location.pathname),
   };
 
