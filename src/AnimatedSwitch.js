@@ -47,7 +47,7 @@ class AnimatedSwitch extends React.Component {
     if (this.state.match.key !== nextMatch.key) {
       this.setState({
         match: nextMatch,
-        key: nextProps.location.key + ++this.matches,
+        key: '' + nextProps.location.key + ++this.matches,
       });
     }
   }
